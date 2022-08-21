@@ -27,12 +27,10 @@ module.exports = () => {
 			swDest: 'src-sw.js',
 		}),
 		new WebpackPwaManifest({
-			fingerprints: false,
-			inject: true,
 			name: 'Just Another Text Editor',
 			short_name: 'Text Editor',
 			description: 'Edit Text',
-			start_url: './',
+			// start_url: './',
 			publicPath: './',
 			icons: [
 			{
