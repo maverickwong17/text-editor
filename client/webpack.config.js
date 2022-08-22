@@ -32,7 +32,7 @@ module.exports = () => {
 			name: 'Just Another Text Editor',
 			short_name: 'Text Editor',
 			description: 'Edit Text',
-			start_url: './',
+			start_url: '/',
 			publicPath: './',
 			icons: [
 			{

@@ -35,6 +35,6 @@
   "short_name": "Text Editor",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": "./",
+  "start_url": "/",
   "description": "Edit Text"
 }
