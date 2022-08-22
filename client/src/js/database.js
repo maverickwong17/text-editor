@@ -15,7 +15,12 @@ const initdb = async () =>
 // TODO: Add logic to a method that accepts some content and adds it to the database
 export const putDb = async (content) => {
 	console.log('putDb')
-	
+	const jateDB = await openDB('jate',1);
+	const action = jateDB.transaction('jate', 'readwrite')
+	const storeData = action.objectStore('jate')
+	const put = storeData.put({ id : 1, text: content })
+	const output = await put;
+	console.log('Data saved to db ', output)
 };
 
 // TODO: Add logic for a method that gets all the content from the database
